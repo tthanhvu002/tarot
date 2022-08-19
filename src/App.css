@@ -3,11 +3,13 @@
   padding: 0;
   
 }
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 body{
   background-color: var(--gray-color);
   background: rgb(34,193,195);
   background: linear-gradient(283deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
   padding: 2%;
+  font-family: 'Montserrat', sans-serif;
   --gray-color: #e4e2e2;
 }
 
@@ -64,6 +66,8 @@ body{
 .modal-dialog{
   max-width: 90%;
   min-height: 70%;
+  margin: auto;
+  margin-top: 10%;
 }
 .modal::-webkit-scrollbar{
   display: none;
@@ -90,4 +94,9 @@ body{
 }
 .carousel-control-prev:hover, .carousel-control-next:hover{
   opacity: 0;
+}
+@media screen and (max-width: 767.98px) {
+  .left, .right{
+    font-size: 11px;
+  }
 }
