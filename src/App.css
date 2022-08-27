@@ -5,9 +5,9 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 body{
-  background-color: var(--gray-color);
-  background: rgb(34,193,195);
-  background: linear-gradient(283deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+  background: rgb(95,195,228);
+  background: linear-gradient(283deg, rgba(95,195,228,1) 31%, rgba(229, 93, 136, 0.475) 100%);
+
   padding: 2%;
   font-family: 'Montserrat', sans-serif;
   --gray-color: #e4e2e2;
@@ -15,14 +15,14 @@ body{
 
 .App {
   border-radius: 12px;
-  background-color: rgba(255, 255, 255, 0.164); 
+  background-color: rgba(255, 255, 255, 0.32); 
   padding: 2%;
 }
 
 
 .card{
   margin-top: 20px;
-  background-color: rgba(255, 255, 255, 0.63);
+  background-color: #fff;
   border-radius: 8px;
   padding: 3%;
   border: 0;
@@ -85,9 +85,10 @@ body{
   font-size: 22px;
   margin-bottom: 20px;
 }
-.card-detail .left{
-  padding-right: calc(var(--bs-gutter-x) * .5);
+.card-detail .col-6:first-child{
   border-right: 2px solid #000;
+}
+.card-detail .left{
 }
 .carousel-control-prev, .carousel-control-next{
   opacity: 0;
@@ -97,6 +98,6 @@ body{
 }
 @media screen and (max-width: 767.98px) {
   .left, .right{
-    font-size: 11px;
+    font-size: 13px;
   }
 }
